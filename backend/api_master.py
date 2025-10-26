@@ -100,70 +100,60 @@ def analizar_ruta(estado: str, ciudad: str, carpeta: str):
         "resultado": resultado
     })
 
-# --- NUEVO: subir de 1 a 3 PDFs a Estados/temp/temp (sin tocar lo demás) ---
+# === NUEVO (reemplazo correcto): subir 1–3 PDFs a Estados/temp/temp/temp ===
+from typing import List
+from fastapi import UploadFile, File, HTTPException
+from pathlib import Path
+import os, shutil
+
 @app.post("/api/upload/temp")
-async def upload_temp_files(request):
+async def upload_temp_files(files: List[UploadFile] = File(...)):
     """
-    Recibe archivos (clave 'files' en form-data) y los guarda en Estados/temp/temp.
-    NO modifica ni reemplaza ningún endpoint existente.
+    Recibe archivos via multipart/form-data (clave 'files') y los guarda en:
+    BASE_DIR/Estados/temp/temp/temp
+    De esta forma, tu endpoint de análisis /api/analizar/temp/temp/temp
+    SÍ encuentra la carpeta.
     """
-    # imports locales para no alterar tu cabecera
-    from pathlib import Path
-    import os, shutil
-    from starlette.datastructures import UploadFile as StarletteUploadFile
-
     try:
-        form = await request.form()
-        files = form.getlist("files")
         if not files:
-            raise ValueError("No se recibió ningún archivo.")
+            raise HTTPException(status_code=400, detail="No se recibió ningún archivo.")
         if len(files) > 3:
-            raise ValueError("Máximo 3 archivos.")
+            raise HTTPException(status_code=400, detail="Máximo 3 archivos.")
 
-        # Carpeta destino: BASE_DIR/Estados/temp/temp
         estados_dir = Path(os.path.join(BASE_DIR, "Estados"))
-        temp_dir = estados_dir / "temp" / "temp"
-        temp_dir.mkdir(parents=True, exist_ok=True)
+        dest_dir = estados_dir / "temp" / "temp" / "temp"   # <-- 3er 'temp' para que /analizar/... funcione
+        dest_dir.mkdir(parents=True, exist_ok=True)
 
         saved = []
         for f in files:
-            # Puede venir como Starlette UploadFile o similar
-            if isinstance(f, StarletteUploadFile):
-                filename = f.filename or "archivo.pdf"
-                content_type = getattr(f, "content_type", "") or ""
-                fileobj = f.file
-            else:
-                # fallback por si llega de otra forma
-                filename = getattr(f, "filename", "archivo.pdf")
-                content_type = getattr(f, "content_type", "") or ""
-                fileobj = getattr(f, "file", None)
+            filename = (f.filename or "archivo.pdf").strip()
+            ctype = (f.content_type or "").lower()
+            if not filename.lower().endswith(".pdf") and "pdf" not in ctype:
+                raise HTTPException(status_code=400, detail=f"Solo PDFs. Archivo: {filename}")
 
-            if not filename.lower().endswith(".pdf") and "pdf" not in content_type.lower():
-                raise ValueError(f"Solo se aceptan PDFs. Archivo: {filename}")
-
-            dest = temp_dir / filename
-            base, ext = dest.stem, dest.suffix or ".pdf"
+            target = dest_dir / filename
+            base, ext = target.stem, (target.suffix or ".pdf")
             i = 1
-            while dest.exists():
-                dest = temp_dir / f"{base} ({i}){ext}"
+            while target.exists():
+                target = dest_dir / f"{base} ({i}){ext}"
                 i += 1
 
-            with dest.open("wb") as out:
-                shutil.copyfileobj(fileobj, out)
+            with target.open("wb") as out:
+                shutil.copyfileobj(f.file, out)
 
-            saved.append(dest.name)
+            saved.append(target.name)
 
         return {
             "status": "ok",
-            "ruta_relativa": "temp/temp",      # carpeta donde quedaron
-            "saved": saved,                    # nombres guardados
+            "ruta_relativa": "temp/temp/temp",   # coincide con /api/analizar/temp/temp/temp
+            "saved": saved,
             "analizar_endpoint": "/api/analizar/temp/temp/temp"
         }
 
+    except HTTPException:
+        raise
     except Exception as e:
-        # sin tocar tu manejo global, devolvemos 400 para errores del usuario
-        from fastapi import HTTPException
-        raise HTTPException(status_code=400, detail=str(e))
+        raise HTTPException(status_code=500, detail=f"Error al guardar: {e}")
 
 
 if __name__ == "__main__":
