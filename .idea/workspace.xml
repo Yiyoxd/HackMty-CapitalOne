@@ -4,10 +4,40 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d44046a8-ba39-424f-b3e7-ab4f1dc24ac3" name="Changes" comment="hasta aqui vamos bien">
+    <list default="true" id="d44046a8-ba39-424f-b3e7-ab4f1dc24ac3" name="Changes" comment="jasra aqui bien">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/api_master.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/api_master.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/presupuestos-frontend/frontend/public/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/presupuestos-frontend/frontend/public/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/presupuestos-frontend/frontend/public/ciudades_aguascalientes.geojson" beforeDir="false" afterPath="$PROJECT_DIR$/presupuestos-frontend/frontend/public/lugares/ciudades_aguascalientes.geojson" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/presupuestos-frontend/frontend/public/ciudades_bajacalifornia.geojson" beforeDir="false" afterPath="$PROJECT_DIR$/presupuestos-frontend/frontend/public/lugares/ciudades_bajacalifornia.geojson" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/presupuestos-frontend/frontend/public/ciudades_bajacaliforniasur.geojson" beforeDir="false" afterPath="$PROJECT_DIR$/presupuestos-frontend/frontend/public/lugares/ciudades_bajacaliforniasur.geojson" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/presupuestos-frontend/frontend/public/ciudades_campeche.geojson" beforeDir="false" afterPath="$PROJECT_DIR$/presupuestos-frontend/frontend/public/lugares/ciudades_campeche.geojson" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/presupuestos-frontend/frontend/public/ciudades_cdmx.geojson" beforeDir="false" afterPath="$PROJECT_DIR$/presupuestos-frontend/frontend/public/lugares/ciudades_cdmx.geojson" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/presupuestos-frontend/frontend/public/ciudades_chiapas.geojson" beforeDir="false" afterPath="$PROJECT_DIR$/presupuestos-frontend/frontend/public/lugares/ciudades_chiapas.geojson" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/presupuestos-frontend/frontend/public/ciudades_chihuahua.geojson" beforeDir="false" afterPath="$PROJECT_DIR$/presupuestos-frontend/frontend/public/lugares/ciudades_chihuahua.geojson" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/presupuestos-frontend/frontend/public/ciudades_coahuila.geojson" beforeDir="false" afterPath="$PROJECT_DIR$/presupuestos-frontend/frontend/public/lugares/ciudades_coahuila.geojson" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/presupuestos-frontend/frontend/public/ciudades_durango.geojson" beforeDir="false" afterPath="$PROJECT_DIR$/presupuestos-frontend/frontend/public/lugares/ciudades_durango.geojson" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/presupuestos-frontend/frontend/public/ciudades_guerrero.geojson" beforeDir="false" afterPath="$PROJECT_DIR$/presupuestos-frontend/frontend/public/lugares/ciudades_guerrero.geojson" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/presupuestos-frontend/frontend/public/ciudades_jalisco.geojson" beforeDir="false" afterPath="$PROJECT_DIR$/presupuestos-frontend/frontend/public/lugares/ciudades_jalisco.geojson" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/presupuestos-frontend/frontend/public/ciudades_mexico.geojson" beforeDir="false" afterPath="$PROJECT_DIR$/presupuestos-frontend/frontend/public/lugares/ciudades_mexico.geojson" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/presupuestos-frontend/frontend/public/ciudades_michoacan.geojson" beforeDir="false" afterPath="$PROJECT_DIR$/presupuestos-frontend/frontend/public/lugares/ciudades_michoacan.geojson" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/presupuestos-frontend/frontend/public/ciudades_morelos.geojson" beforeDir="false" afterPath="$PROJECT_DIR$/presupuestos-frontend/frontend/public/lugares/ciudades_morelos.geojson" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/presupuestos-frontend/frontend/public/ciudades_nayarit.geojson" beforeDir="false" afterPath="$PROJECT_DIR$/presupuestos-frontend/frontend/public/lugares/ciudades_nayarit.geojson" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/presupuestos-frontend/frontend/public/ciudades_nuevoleon.geojson" beforeDir="false" afterPath="$PROJECT_DIR$/presupuestos-frontend/frontend/public/lugares/ciudades_nuevoleon.geojson" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/presupuestos-frontend/frontend/public/ciudades_oaxaca.geojson" beforeDir="false" afterPath="$PROJECT_DIR$/presupuestos-frontend/frontend/public/lugares/ciudades_oaxaca.geojson" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/presupuestos-frontend/frontend/public/ciudades_puebla.geojson" beforeDir="false" afterPath="$PROJECT_DIR$/presupuestos-frontend/frontend/public/lugares/ciudades_puebla.geojson" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/presupuestos-frontend/frontend/public/ciudades_quintanaroo.geojson" beforeDir="false" afterPath="$PROJECT_DIR$/presupuestos-frontend/frontend/public/lugares/ciudades_quintanaroo.geojson" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/presupuestos-frontend/frontend/public/ciudades_sanluis.geojson" beforeDir="false" afterPath="$PROJECT_DIR$/presupuestos-frontend/frontend/public/lugares/ciudades_sanluis.geojson" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/presupuestos-frontend/frontend/public/ciudades_sinaloa.geojson" beforeDir="false" afterPath="$PROJECT_DIR$/presupuestos-frontend/frontend/public/lugares/ciudades_sinaloa.geojson" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/presupuestos-frontend/frontend/public/ciudades_sonora.geojson" beforeDir="false" afterPath="$PROJECT_DIR$/presupuestos-frontend/frontend/public/lugares/ciudades_sonora.geojson" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/presupuestos-frontend/frontend/public/ciudades_tabasco.geojson" beforeDir="false" afterPath="$PROJECT_DIR$/presupuestos-frontend/frontend/public/lugares/ciudades_tabasco.geojson" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/presupuestos-frontend/frontend/public/ciudades_tamaulipas.geojson" beforeDir="false" afterPath="$PROJECT_DIR$/presupuestos-frontend/frontend/public/lugares/ciudades_tamaulipas.geojson" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/presupuestos-frontend/frontend/public/ciudades_tlaxcala.geojson" beforeDir="false" afterPath="$PROJECT_DIR$/presupuestos-frontend/frontend/public/lugares/ciudades_tlaxcala.geojson" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/presupuestos-frontend/frontend/public/ciudades_veracruz.geojson" beforeDir="false" afterPath="$PROJECT_DIR$/presupuestos-frontend/frontend/public/lugares/ciudades_veracruz.geojson" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/presupuestos-frontend/frontend/public/ciudades_yucatan.geojson" beforeDir="false" afterPath="$PROJECT_DIR$/presupuestos-frontend/frontend/public/lugares/ciudades_yucatan.geojson" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/presupuestos-frontend/frontend/public/ciudades_zacatecas.geojson" beforeDir="false" afterPath="$PROJECT_DIR$/presupuestos-frontend/frontend/public/lugares/ciudades_zacatecas.geojson" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/presupuestos-frontend/frontend/public/ciuidades_colima.geojson" beforeDir="false" afterPath="$PROJECT_DIR$/presupuestos-frontend/frontend/public/lugares/ciuidades_colima.geojson" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/presupuestos-frontend/frontend/public/data/ejemplo_analisis.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/presupuestos-frontend/frontend/public/estados_mexico.geojson" beforeDir="false" afterPath="$PROJECT_DIR$/presupuestos-frontend/frontend/public/lugares/estados_mexico.geojson" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/presupuestos-frontend/frontend/public/sector-publico.html" beforeDir="false" afterPath="$PROJECT_DIR$/presupuestos-frontend/frontend/public/sector-publico.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,10 +54,10 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="fullstack" />
       </map>
     </option>
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/presupuestos-frontend" />
     <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
@@ -61,7 +91,7 @@
     "Python.api_parseo_pdfs.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "fullstack",
+    "git-widget-placeholder": "main",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -72,8 +102,8 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Alfredo\Downloads\PapusPorMexico\presupuestos-frontend\frontend\public" />
       <recent name="C:\Users\Alfredo\Downloads\PapusPorMexico\presupuestos-frontend\frontend\public\lugares" />
+      <recent name="C:\Users\Alfredo\Downloads\PapusPorMexico\presupuestos-frontend\frontend\public" />
       <recent name="C:\Users\Alfredo\Downloads\PapusPorMexico\backend" />
       <recent name="C:\Users\Alfredo\Downloads\PapusPorMexico\Estados\Coahuila\Torreón" />
     </key>
@@ -152,7 +182,7 @@
       <workItem from="1761442515397" duration="1627000" />
       <workItem from="1761447364822" duration="10572000" />
       <workItem from="1761464450546" duration="171000" />
-      <workItem from="1761465751629" duration="5570000" />
+      <workItem from="1761465751629" duration="6459000" />
     </task>
     <task id="LOCAL-00001" summary="Primer api terminada y archivos de prueba de Torreón agregados">
       <option name="closed" value="true" />
@@ -202,7 +232,15 @@
       <option name="project" value="LOCAL" />
       <updated>1761470838319</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="jasra aqui bien">
+      <option name="closed" value="true" />
+      <created>1761471411287</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1761471411287</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -225,7 +263,8 @@
     <MESSAGE value="api de analisis bien terminada" />
     <MESSAGE value="Api MASTER terminada" />
     <MESSAGE value="hasta aqui vamos bien" />
-    <option name="LAST_COMMIT_MESSAGE" value="hasta aqui vamos bien" />
+    <MESSAGE value="jasra aqui bien" />
+    <option name="LAST_COMMIT_MESSAGE" value="jasra aqui bien" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/PapusPorMexico$api_analisis.coverage" NAME="api_analisis Coverage Results" MODIFIED="1761453910372" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
