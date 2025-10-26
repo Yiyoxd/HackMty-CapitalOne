@@ -4,13 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d44046a8-ba39-424f-b3e7-ab4f1dc24ac3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/PapusPorMexico.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="d44046a8-ba39-424f-b3e7-ab4f1dc24ac3" name="Changes" comment="Primer api terminada y archivos de prueba de Torreón agregados" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -75,8 +69,17 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1761440876511</updated>
-      <workItem from="1761440877613" duration="1137000" />
+      <workItem from="1761440877613" duration="1354000" />
     </task>
+    <task id="LOCAL-00001" summary="Primer api terminada y archivos de prueba de Torreón agregados">
+      <option name="closed" value="true" />
+      <created>1761442161323</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1761442161323</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -92,6 +95,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Primer api terminada y archivos de prueba de Torreón agregados" />
+    <option name="LAST_COMMIT_MESSAGE" value="Primer api terminada y archivos de prueba de Torreón agregados" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/PapusPorMexico$api_parseo_pdfs.coverage" NAME="api_parseo_pdfs Coverage Results" MODIFIED="1761441915127" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
