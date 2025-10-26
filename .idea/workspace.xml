@@ -4,11 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d44046a8-ba39-424f-b3e7-ab4f1dc24ac3" name="Changes" comment="api de analisis bien terminada">
-      <change afterPath="$PROJECT_DIR$/api_master.py" afterDir="false" />
+    <list default="true" id="d44046a8-ba39-424f-b3e7-ab4f1dc24ac3" name="Changes" comment="Api MASTER terminada">
+      <change afterPath="$PROJECT_DIR$/backend/api_master.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api_analisis.py" beforeDir="false" afterPath="$PROJECT_DIR$/api_analisis.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api_parseo_pdfs.py" beforeDir="false" afterPath="$PROJECT_DIR$/api_parseo_pdfs.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Privado/Contrato_256_de_2021_-_CONSORCIO_GALESP_2021_xCausuladox_x1x_x1x.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api_analisis.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/api_analisis.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api_master.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api_parseo_pdfs.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/api_parseo_pdfs.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/presupuestos-frontend/.vscode/settings.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/presupuestos-frontend/frontend/public/sector-publico.html" beforeDir="false" afterPath="$PROJECT_DIR$/presupuestos-frontend/frontend/public/sector-publico.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,7 +28,13 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/presupuestos-frontend" />
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
   &quot;lastFilter&quot;: {
@@ -37,6 +48,9 @@
     &quot;accountId&quot;: &quot;d35c1881-e311-413a-9025-993e1c90f492&quot;
   }
 }</component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/api_master.py" root0="FORCE_HIGHLIGHTING" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 4
 }</component>
@@ -53,7 +67,7 @@
     "Python.api_parseo_pdfs.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "main",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -64,10 +78,13 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Alfredo\Downloads\PapusPorMexico\presupuestos-frontend\frontend\public" />
+      <recent name="C:\Users\Alfredo\Downloads\PapusPorMexico\presupuestos-frontend\frontend\public\lugares" />
+      <recent name="C:\Users\Alfredo\Downloads\PapusPorMexico\backend" />
       <recent name="C:\Users\Alfredo\Downloads\PapusPorMexico\Estados\Coahuila\Torreón" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.api_master">
+  <component name="RunManager">
     <configuration name="api_analisis" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="PapusPorMexico" />
       <option name="ENV_FILES" value="" />
@@ -82,7 +99,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/api_analisis.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\Alfredo\Downloads\PapusPorMexico\backend\api_analisis.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -105,7 +122,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/api_master.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\Alfredo\Downloads\PapusPorMexico\backend\api_master.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -139,7 +156,9 @@
       <updated>1761440876511</updated>
       <workItem from="1761440877613" duration="1611000" />
       <workItem from="1761442515397" duration="1627000" />
-      <workItem from="1761447364822" duration="9759000" />
+      <workItem from="1761447364822" duration="10572000" />
+      <workItem from="1761464450546" duration="171000" />
+      <workItem from="1761465751629" duration="4859000" />
     </task>
     <task id="LOCAL-00001" summary="Primer api terminada y archivos de prueba de Torreón agregados">
       <option name="closed" value="true" />
@@ -173,7 +192,15 @@
       <option name="project" value="LOCAL" />
       <updated>1761453799052</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Api MASTER terminada">
+      <option name="closed" value="true" />
+      <created>1761457210395</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1761457210395</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -194,11 +221,12 @@
     <MESSAGE value="Primer api terminada y archivos de prueba de Torreón agregados" />
     <MESSAGE value="api de parseo terminada" />
     <MESSAGE value="api de analisis bien terminada" />
-    <option name="LAST_COMMIT_MESSAGE" value="api de analisis bien terminada" />
+    <MESSAGE value="Api MASTER terminada" />
+    <option name="LAST_COMMIT_MESSAGE" value="Api MASTER terminada" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/PapusPorMexico$api_analisis.coverage" NAME="api_analisis Coverage Results" MODIFIED="1761453910372" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/PapusPorMexico$api_master.coverage" NAME="api_master Coverage Results" MODIFIED="1761456728932" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/PapusPorMexico$api_master.coverage" NAME="api_master Coverage Results" MODIFIED="1761464470392" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/PapusPorMexico$api_parseo_pdfs.coverage" NAME="api_parseo_pdfs Coverage Results" MODIFIED="1761442613653" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
