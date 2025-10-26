@@ -15,7 +15,7 @@ if not api_key:
 
 client = OpenAI(api_key=api_key)
 
-CANDIDATES_DEFAULT = ["gpt-5", "gpt-4o", "gpt-4o-mini", "o3-mini", "o1"]
+CANDIDATES_DEFAULT = ["gpt-4o", "gpt-4o-mini", "o3-mini", "o1"]
 
 PROMPT_TEMPLATE = """
 Analiza el siguiente texto y devuelve SOLO un JSON con este formato exacto:
@@ -34,7 +34,7 @@ Analiza el siguiente texto y devuelve SOLO un JSON con este formato exacto:
     "observaciones": []
   }},
   "partidas": [
-    {{ "descripcion": "", "unidad": "", "cantidad": 0.00, "precio": "" }}
+    {{ "descripcion": "", "unidad": "", "cantidad": 0.00, "precio": 0 }}
   ]
 }}
 
@@ -105,13 +105,3 @@ def analizar_carpeta_obras(folder_path: str, model_candidates: List[str] = None)
     json_text = response.choices[0].message.content
     json.loads(json_text)  # valida JSON
     return json_text
-
-
-if __name__ == "__main__":
-    ruta = r"Estados\Coahuila\Torreón\Pozo Las Brisas"
-    try:
-        resultado = analizar_carpeta_obras(ruta)
-        print("\n✅ Resultado JSON:\n")
-        print(resultado)
-    except Exception as e:
-        print(f"\n❌ Error: {e}")
