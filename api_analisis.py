@@ -5,7 +5,7 @@ import time
 from typing import List
 from openai import OpenAI
 
-# ================== CONFIGURACIÓN ==================
+# ================== OPENAI ==================
 api_key = os.getenv("OPENAI_API_KEY")
 if not api_key:
     raise EnvironmentError("❌ Falta la variable de entorno OPENAI_API_KEY")
@@ -66,9 +66,6 @@ monto_total_contrato_MXN es costo_en_contrato
 """.strip()
 
 
-
-
-
 def first_available_model(client: OpenAI, candidates: List[str]) -> str:
     start = time.perf_counter()
     selected = None
@@ -85,6 +82,7 @@ def first_available_model(client: OpenAI, candidates: List[str]) -> str:
         raise RuntimeError("No se encontró un modelo disponible.")
     print(f"🧠 Modelo seleccionado: {selected}  |  ⏱️ selección modelo: {elapsed_ms:.0f} ms")
     return selected
+
 
 def analizar_costos_por_api(json_input: str, model_candidates: List[str] = None) -> str:
     # 1) Selección de modelo
@@ -138,7 +136,6 @@ def analizar_costos_por_api(json_input: str, model_candidates: List[str] = None)
             p["diferencia"] = 0
             p["diferencia_%"] = 0
         else:
-            # Calcular diferencia real (puede ser negativa o positiva)
             diff = costo_mercado - costo_contrato
             p["diferencia"] = _round_num(diff, 2)
             p["diferencia_%"] = _round_num((diff / costo_contrato) * 100, 4)

@@ -1,3 +1,4 @@
+# api_parseo_pdfs.py  (EXTRACTOR: leer PDFs y armar JSON base)
 import os
 import json
 from typing import List
@@ -17,11 +18,13 @@ client = OpenAI(api_key=api_key)
 
 CANDIDATES_DEFAULT = ["gpt-4o", "gpt-4o-mini", "o3-mini", "o1"]
 
+# ⚠️ IMPORTANTÍSIMO:
+# Usamos un marcador [[CONTENIDO]] para evitar .format y conflictos con llaves {}
 PROMPT_TEMPLATE = """
 Analiza el siguiente texto y devuelve SOLO un JSON con este formato exacto:
 
-{{
-  "proyecto": {{
+{
+  "proyecto": {
     "nombre": "",
     "lugar": "",
     "contrato_no": "",
@@ -32,11 +35,11 @@ Analiza el siguiente texto y devuelve SOLO un JSON con este formato exacto:
     "objetivo": "",
     "alcance_tecnico": [],
     "observaciones": []
-  }},
+  },
   "partidas": [
-    {{ "descripcion": "", "unidad": "", "cantidad": 0.00, "precio": 0 }}
+    { "descripcion": "", "unidad": "", "cantidad": 0.00, "precio": 0 }
   ]
-}}
+}
 
 Detalles para llenar:
 - nombre, lugar, contrato_no, contratista, monto_total_contrato_MXN (Incluye IVA si aplica), fechas → del contrato
@@ -46,7 +49,7 @@ Detalles para llenar:
 No inventes nada; solo usa lo que esté realmente en los documentos.
 
 Contenido:
-{contenido}
+[[CONTENIDO]]
 """.strip()
 
 
@@ -92,7 +95,10 @@ def first_available_model(client: OpenAI, candidates: List[str]) -> str:
 
 def analizar_carpeta_obras(folder_path: str, model_candidates: List[str] = None) -> str:
     contenido = read_pdfs_from_folder(folder_path)
-    prompt = PROMPT_TEMPLATE.format(contenido=contenido)
+
+    # 🔒 NADA de .format() aquí; usamos reemplazo del marcador
+    prompt = PROMPT_TEMPLATE.replace("[[CONTENIDO]]", contenido)
+
     model_id = first_available_model(client, model_candidates or CANDIDATES_DEFAULT)
 
     response = client.chat.completions.create(
